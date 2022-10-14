@@ -1,0 +1,9 @@
+export PROJ=~/Projects/signup-genius
+export PYTHONPATH=$PROJ/src:$PYTHONPATH
+
+alias pipc="cd $PROJ && pip-compile && pip install -r requirements.txt"
+alias pipcd="cd $PROJ && pip-compile requirements-dev.in -o requirements-dev.txt && pip install -r requirements-dev.txt"
+
+alias cov="coverage run --source=src -m pytest && coverage report --show-missing"
+
+

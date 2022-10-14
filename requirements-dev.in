@@ -1,0 +1,6 @@
+pip-tools
+ipython
+pytest
+names
+coverage
+pytest-cov
