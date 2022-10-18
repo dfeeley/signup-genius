@@ -12,6 +12,11 @@ def test_introspect_date_location_time_slot(date_location_time_slot):
     assert introspector.type == SignupTypeEnum.DATE_LOCATION_TIME_SLOT
 
 
+def test_introspect_rsvp(rsvp):
+    introspector = Introspector.from_path(rsvp)
+    assert introspector.type == SignupTypeEnum.RSVP
+
+
 def test_introspect_rsvp_adult_child(rsvp_adult_child):
     introspector = Introspector.from_path(rsvp_adult_child)
     assert introspector.type == SignupTypeEnum.RSVP_ADULT_CHILD

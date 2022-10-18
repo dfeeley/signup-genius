@@ -7,6 +7,7 @@ from .enums import SignupTypeEnum
 
 
 PARSERS = {
+    SignupTypeEnum.RSVP: "signup_genius.parsers.rsvp",
     SignupTypeEnum.RSVP_ADULT_CHILD: "signup_genius.parsers.rsvp_adult_child",
     SignupTypeEnum.DATE_TIME_SLOT: "signup_genius.parsers.date_time_slot",
     SignupTypeEnum.DATE_LOCATION_TIME_SLOT: "signup_genius.parsers.date_location_time_slot",
@@ -39,7 +40,10 @@ class Introspector:
         count_headers = self._count_by_selector("td.SUGtableheader")
 
         if count_outer_tables == 2:
-            ret = SignupTypeEnum.RSVP_ADULT_CHILD
+            if self.soup.find(text="Guest Count:"):
+                ret = SignupTypeEnum.RSVP
+            else:
+                ret = SignupTypeEnum.RSVP_ADULT_CHILD
         elif count_outer_tables == 1:
             if count_headers == 3:
                 ret = SignupTypeEnum.DATE_TIME_SLOT

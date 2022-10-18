@@ -20,6 +20,11 @@ def date_location_time_slot(html_path):
 
 
 @pytest.fixture
+def rsvp(html_path):
+    return html_path / "rsvp.htm"
+
+
+@pytest.fixture
 def rsvp_adult_child(html_path):
     return html_path / "rsvp-adult-child.htm"
 

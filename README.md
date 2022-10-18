@@ -26,11 +26,11 @@ For example for a simple yes/no response with adult / child counts the signup wi
 
 ```python
 class Signup:
-		name: str
-		response: str
-		comments: str = ''
-		adult_count: int = 0
-		child_count: int = 0
+    name: str
+    response: str
+    comments: str = ''
+    adult_count: int = 0
+    child_count: int = 0
 
 ```
 
@@ -38,10 +38,10 @@ Whereas for a signup-genius with Date / Location / Time and multiple slots with 
 
 ```python
 class Signup:
-		name: str
-		comments: str = ''
-		count: int = 0
-		slot: Slot
+    name: str
+    comments: str = ''
+    count: int = 0
+    slot: Slot
 
 # where the embedded slot object is:
 
@@ -89,9 +89,10 @@ Again the signups that are updated will be annotated with an *_original_name* at
 
 So far the following variants are supported:
 
-* Yes / No responses with adult, child counts
+* Yes / No / Maybe responses with guest count
+* Yes / No / Maybe responses with adult, child counts
 * Date / Time / Slot signups
-* Date / /Location / Time / Slot signups
+* Date / Location / Time / Slot signups
 
 The call to get_signups will first inspect the signup genius to interpret the variant, and use the appropriate parser.  If the variant is not known then a *UnsupportedVariant* exception will be raised
 
