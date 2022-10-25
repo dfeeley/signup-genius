@@ -3,3 +3,8 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov
+
+# build stuff
+dist/
+src/signup_genius.egg-info/
+
