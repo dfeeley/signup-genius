@@ -4,10 +4,8 @@ A library for parsing signup-genius responses from the signup html, as a free al
 
 ### Install
 
-PyPI package to follow, but for now install from git:
-
 ```sh
-pip install git+https://github.com/dfeeley/signup-genius
+pip install signup-genius
 
 ```
 

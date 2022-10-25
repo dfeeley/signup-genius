@@ -6,4 +6,4 @@ alias pipcd="cd $PROJ && pip-compile requirements-dev.in -o requirements-dev.txt
 
 alias cov="coverage run --source=src -m pytest && coverage report --show-missing"
 
-
+alias build="python -m build"
