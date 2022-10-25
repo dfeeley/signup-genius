@@ -40,7 +40,7 @@ class Introspector:
         count_headers = self._count_by_selector("td.SUGtableheader")
 
         if count_outer_tables == 2:
-            if self.soup.find(text="Guest Count:"):
+            if self.soup.find(string="Guest Count:"):
                 ret = SignupTypeEnum.RSVP
             else:
                 ret = SignupTypeEnum.RSVP_ADULT_CHILD
