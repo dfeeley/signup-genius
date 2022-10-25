@@ -55,5 +55,8 @@ def _signups_from_html(html, name_mapping=None, match_names=None):
     if name_mapping:
         update_signups_from_name_mapping(signups, name_mapping)
     if match_names:
-        update_signups_fuzzy_match(signups, match_names)
+        # exclude any already explicitly mapped
+        update_signups_fuzzy_match(
+            [s for s in signups if not hasattr(s, "_original_name")], match_names
+        )
     return signups

@@ -40,3 +40,16 @@ def test_signups_from_html_with_fuzzy_match(date_time_slot):
     names = {s.name for s in signups}
     assert "John B. Hertel" in names
     assert "John Hertel" not in names
+
+
+def test_signups_from_html_with_name_mapping_and_fuzzy_match(date_time_slot):
+    name_mapping = {"John Hertel": "John B. Hertel"}
+    match_names = ["Another Person"]
+    signups = get_signups_from_html(
+        date_time_slot.read_text(), name_mapping=name_mapping, match_names=match_names
+    )
+    names = {s.name for s in signups}
+    assert (
+        "John B. Hertel" in names
+    ), "explicit name mappings should be ignored by any later match to known names"
+    assert "John Hertel" not in names
