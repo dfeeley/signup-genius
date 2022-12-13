@@ -5,6 +5,8 @@
 ### Added
 
 * Added CHANGELOG
+* Added support for new variant - Slot / Datetime
+* Added replace_names utility script for obfuscating names/comments in signup genius test data
 
 ### Changed
 
@@ -12,8 +14,6 @@
 * Fixed bs4 deprecation warning re use of *text=* with find()
 
 ### Removed
-
-* Removed old replace_names helper script that had been used to anonymize names in html text fixtures
 
 
 ## 0.0.1
