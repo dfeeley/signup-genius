@@ -15,6 +15,11 @@ def date_time_slot(html_path):
 
 
 @pytest.fixture
+def slot_datetime(html_path):
+    return html_path / "slot-datetime.htm"
+
+
+@pytest.fixture
 def date_location_time_slot(html_path):
     return html_path / "date-location-time-slot.htm"
 

@@ -11,6 +11,7 @@ PARSERS = {
     SignupTypeEnum.RSVP_ADULT_CHILD: "signup_genius.parsers.rsvp_adult_child",
     SignupTypeEnum.DATE_TIME_SLOT: "signup_genius.parsers.date_time_slot",
     SignupTypeEnum.DATE_LOCATION_TIME_SLOT: "signup_genius.parsers.date_location_time_slot",
+    SignupTypeEnum.SLOT_DATETIME: "signup_genius.parsers.slot_datetime",
 }
 
 
@@ -45,7 +46,9 @@ class Introspector:
             else:
                 ret = SignupTypeEnum.RSVP_ADULT_CHILD
         elif count_outer_tables == 1:
-            if count_headers == 3:
+            if count_headers == 2:
+                ret = SignupTypeEnum.SLOT_DATETIME
+            elif count_headers == 3:
                 ret = SignupTypeEnum.DATE_TIME_SLOT
             elif count_headers == 4:
                 ret = SignupTypeEnum.DATE_LOCATION_TIME_SLOT

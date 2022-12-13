@@ -27,3 +27,8 @@ def test_introspect_rsvp_adult_child_parser(rsvp_adult_child):
     parser = introspector.parser()
     signups = parser.parse()
     assert len(signups) == 78
+
+
+def test_slot_datetime(slot_datetime):
+    introspector = Introspector.from_path(slot_datetime)
+    assert introspector.type == SignupTypeEnum.SLOT_DATETIME

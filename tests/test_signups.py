@@ -14,16 +14,6 @@ def test_signups_from_html(date_time_slot):
     assert signups[0].slot.date == datetime.date(2022, 10, 5)
 
 
-@pytest.mark.internet
-def test_signups_from_url():
-    url = "https://www.signupgenius.com/go/10c0c4aa8a82cabfdc61-sierra"
-    signups = get_signups(url, refresh=False)
-    assert len(signups) > 0
-    assert signups[0].name == "Jake Mikalis"
-    first = signups[0]
-    assert first.response == "Yes"
-
-
 def test_signups_from_html_with_name_mapping(date_time_slot):
     name_mapping = {"John Hertel": "John B. Hertel"}
     signups = get_signups_from_html(
