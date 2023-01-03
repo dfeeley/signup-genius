@@ -5,6 +5,7 @@ Our test data consists of what were once real signup genius forms with real data
 through this script before pushing to github
 """
 import argparse
+import json
 import logging
 import names
 import pathlib
@@ -29,17 +30,50 @@ def parse_args():
     return parser.parse_args()
 
 
+def replace_names_in_html_file(path):
+    html = path.read_text()
+    for signup in get_signups_from_html(html):
+        html = html.replace(signup.name, names.get_full_name())
+    html = re.sub(r'<div class="SUGMemberComment">.*?</div>', random_comment_div, html)
+    html = re.sub(r'<span class="SUGsmall">.*?</span>', random_comment_span, html)
+    path.write_text(html)
+
+
+def replace_names_in_json_file(path):
+    with open(path) as f:
+        data = json.load(f)
+
+    try:
+        participants = data['DATA']['participants']
+    except (KeyError, TypeError):
+        return
+
+    if isinstance(participants, list):
+        for item in participants:
+            item['FIRSTNAME'] = names.get_first_name()
+            item['LASTNAME'] = names.get_last_name()
+            item['MYCOMMENT'] = ''
+    elif isinstance(participants, dict):
+        for _, items in participants.items():
+            for item in items:
+                item['FIRSTNAME'] = names.get_first_name()
+                item['LASTNAME'] = names.get_last_name()
+                item['MYCOMMENT'] = ''
+    path.write_text(json.dumps(data, indent=2))
+
+
 def main():
     args = parse_args()
     logging.basicConfig(level=args.loglevel)
     for file in args.files:
         path = pathlib.Path(file).resolve()
-        html = path.read_text()
-        for signup in get_signups_from_html(html):
-            html = html.replace(signup.name, names.get_full_name())
-    html = re.sub(r'<div class="SUGMemberComment">.*?</div>', random_comment_div, html)
-    html = re.sub(r'<span class="SUGsmall">.*?</span>', random_comment_span, html)
-    print(html)
+
+        if path.suffix in ('.htm', '.html'):
+            replace_names_in_html_file(path)
+        elif path.suffix in ('.json'):
+            replace_names_in_json_file(path)
+        else:
+            raise ValueError(f'Unrecognized file suffix for file {path}')
 
 
 def random_comment_div(match):

@@ -7,6 +7,7 @@ from .introspect import Introspector
 from .utils import cache_file_for_url
 from .fixes import apply_html_fixes
 from .name_mapping import update_signups_from_name_mapping, update_signups_fuzzy_match
+from .api import get_signups_from_api, url_id_from_url, SignupApiError
 
 
 logger = logging.getLogger(__name__)
@@ -25,6 +26,12 @@ def get_signups(
         html = cache.read_text()
     else:  # pragma: no cover
         logger.info(f"Requesting {url}")
+        # try api first
+        try:
+            return get_signups_from_api(url_id_from_url(url))
+        except SignupApiError:
+            pass
+        # else fallback to parsing html
         resp = requests.get(url)
         html = resp.text
         with open(cache, "w") as f:

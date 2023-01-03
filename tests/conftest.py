@@ -6,7 +6,12 @@ from signup_genius.parsers.rsvp_adult_child import Signup
 
 @pytest.fixture
 def html_path(pytestconfig):
-    return pytestconfig.rootpath / "tests" / "html"
+    return pytestconfig.rootpath / "tests" / "data" / "html"
+
+
+@pytest.fixture
+def api_cache_path(pytestconfig):
+    return pytestconfig.rootpath / "tests" / "data" / "api"
 
 
 @pytest.fixture
