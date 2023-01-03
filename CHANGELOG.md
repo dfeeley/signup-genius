@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## 0.0.3
+
+Released on January 2nd 2023
+
+### Added
+* Added support for api-driven signups
+
+## 0.0.2
+
+Released on December 13th 2022
+
 ### Added
 
 * Added CHANGELOG
