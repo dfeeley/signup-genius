@@ -28,7 +28,9 @@ def get_signups(
         logger.info(f"Requesting {url}")
         # try api first
         try:
-            return get_signups_from_api(url_id_from_url(url))
+            return _signups_from_api(
+                url_id_from_url(url), name_mapping=name_mapping, match_names=match_names
+            )
         except SignupApiError:
             pass
         # else fallback to parsing html
@@ -52,6 +54,18 @@ def get_signups_from_html(html, fixes=True, name_mapping=None, match_names=None)
         name_mapping=name_mapping,
         match_names=match_names,
     )
+
+
+def _signups_from_api(url_id, name_mapping=None, match_names=None):
+    signups = get_signups_from_api(url_id)
+    if name_mapping:
+        update_signups_from_name_mapping(signups, name_mapping)
+    if match_names:
+        # exclude any already explicitly mapped
+        update_signups_fuzzy_match(
+            [s for s in signups if not hasattr(s, "_original_name")], match_names
+        )
+    return signups
 
 
 def _signups_from_html(html, name_mapping=None, match_names=None):

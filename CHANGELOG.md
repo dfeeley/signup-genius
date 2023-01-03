@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.0.4
+
+Released on January 2nd 2023
+
+### Changed
+* When sourcing from api, also apply name mappings and match names logic
+
 ## 0.0.3
 
 Released on January 2nd 2023
