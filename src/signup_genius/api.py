@@ -115,7 +115,7 @@ def get_signups_from_api(url_id, api_wrapper=None):
 
                 slots[slot_inner_id] = Slot(
                     id=slot_inner_id,
-                    name=slot_dict["ITEM"],
+                    name=slot_dict["ITEM"].strip(),
                     date=dated_slot_dict.get("lastSlotDate", ""),
                     comments=slot_dict.get("ITEMCOMMENT", ""),
                     capacity=capacity,
@@ -129,7 +129,7 @@ def get_signups_from_api(url_id, api_wrapper=None):
 
                 slots[slot_inner_id] = Slot(
                     id=slot_inner_id,
-                    name=item_slot_dict["item"],
+                    name=item_slot_dict["item"].strip(),
                     date=slot_dict.get("LASTSLOTDATE", ""),
                     comments=item_slot_dict.get("itemcomment", ""),
                     capacity=capacity,
@@ -143,7 +143,7 @@ def get_signups_from_api(url_id, api_wrapper=None):
         for participant in participants_list:
             name = " ".join(
                 [participant.get("FIRSTNAME", ""), participant.get("LASTNAME", "")]
-            )
+            ).strip()
             count = participant.get("MYQTY", 0)
             comments = participant.get("MYCOMMENT", "")
             slot_signups.append(Signup(name, count, comments, slot))
@@ -168,7 +168,7 @@ def signups_from_participant_api(api_wrapper, list_id, slot_item_id, slot):
     for participant in data["DATA"]["participants"]:
         name = " ".join(
             [participant.get("FIRSTNAME", ""), participant.get("LASTNAME", "")]
-        )
+        ).strip()
         count = participant.get("MYQTY", 0)
         comments = participant.get("MYCOMMENT", "")
         signups.append(Signup(name, count, comments, slot))
