@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+* When sourcing from api, trim whitespace from names
+
 ## 0.0.4
 
 Released on January 2nd 2023
