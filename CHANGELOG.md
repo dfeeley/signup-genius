@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+
+## 0.0.5
+
+Released on February 23rd 2023
+
 ### Changed
 
 * When sourcing from api, trim whitespace from names
