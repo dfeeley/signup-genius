@@ -44,7 +44,6 @@ class Parser(BaseParser):
         if comment_elem := td.select_one("span"):
             comments = comment_elem.text.strip()
         try:
-            breakpoint()
             name, adult_count, child_count = self._parse_supplied_name(supplied_name)
             return Signup(response, name, comments, adult_count, child_count)
         except ParseError as ex:  # pragma: no cover
