@@ -55,7 +55,7 @@ class Parser(BaseParser):
         return Signup(response, name, comments="", guest_count=0)
 
     def _parse_supplied_name(self, raw):
-        if match := re.match(r"^(?P<name>.*?) \((?P<count>\d+) guest", raw):
+        if match := re.match(r"^(?P<name>.*?)[\n ]*\((?P<count>\d+) guest", raw):
             name, count = match.group("name"), match.group("count")
             count = int(count) if count else 0
         return name, count

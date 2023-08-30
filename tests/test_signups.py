@@ -4,6 +4,13 @@ import datetime
 from signup_genius import get_signups, get_signups_from_html
 
 
+def test_signups_from_manresa():
+    signups = get_signups(
+        "https://www.signupgenius.com/go/10c0c4aa8a82cabfdc61-manresa"
+    )
+    assert len(signups) > 0
+
+
 def test_signups_from_api_warriors():
     signups = get_signups(
         "https://www.signupgenius.com/go/5080c48a4ac2fa13-warrriors#/"

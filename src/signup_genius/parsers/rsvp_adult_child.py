@@ -44,6 +44,7 @@ class Parser(BaseParser):
         if comment_elem := td.select_one("span"):
             comments = comment_elem.text.strip()
         try:
+            breakpoint()
             name, adult_count, child_count = self._parse_supplied_name(supplied_name)
             return Signup(response, name, comments, adult_count, child_count)
         except ParseError as ex:  # pragma: no cover
@@ -55,7 +56,7 @@ class Parser(BaseParser):
         return Signup(response, name, comments="", adult_count=0, child_count=0)
 
     def _parse_supplied_name(self, raw):
-        if match := re.match(r"^(?P<name>.*?) \((?P<counts>.*?)\)", raw):
+        if match := re.match(r"^(?P<name>.*?)[\n ]*\((?P<counts>.*?)\)", raw):
             name, counts = match.group("name"), match.group("counts")
             adult_count, child_count = 0, 0
             for piece in re.split(r", ", counts):
@@ -70,7 +71,8 @@ class Parser(BaseParser):
                     adult_count = count
                 elif adult_or_child.startswith("child"):
                     child_count = count
-        return name, adult_count, child_count
+            return name, adult_count, child_count
+        raise ParseError(f"Failed to parse name from {raw}")
 
 
 @dataclass
