@@ -3,6 +3,14 @@
 ## Unreleased
 
 
+## 0.0.6
+
+Released on August 30th 2023
+
+### Changed
+
+* Updated parsing to tolerate newline between name and guest count rather than space
+
 ## 0.0.5
 
 Released on February 23rd 2023
