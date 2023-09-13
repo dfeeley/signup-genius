@@ -142,10 +142,10 @@ def get_signups_from_api(url_id, api_wrapper=None):
         total_count = 0
         for participant in participants_list:
             name = " ".join(
-                [participant.get("FIRSTNAME", ""), participant.get("LASTNAME", "")]
+                [participant.get("firstname", ""), participant.get("lastname", "")]
             ).strip()
-            count = participant.get("MYQTY", 0)
-            comments = participant.get("MYCOMMENT", "")
+            count = participant.get("myqty", 0)
+            comments = participant.get("mycomment", "")
             slot_signups.append(Signup(name, count, comments, slot))
             total_count += count
         if total_count < slot.filled:
@@ -167,10 +167,10 @@ def signups_from_participant_api(api_wrapper, list_id, slot_item_id, slot):
     total_count = 0
     for participant in data["DATA"]["participants"]:
         name = " ".join(
-            [participant.get("FIRSTNAME", ""), participant.get("LASTNAME", "")]
+            [participant.get("firstname", ""), participant.get("lastname", "")]
         ).strip()
-        count = participant.get("MYQTY", 0)
-        comments = participant.get("MYCOMMENT", "")
+        count = participant.get("myqty", 0)
+        comments = participant.get("mycomment", "")
         signups.append(Signup(name, count, comments, slot))
         total_count += count
     if total_count < slot.filled:
