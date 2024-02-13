@@ -2,6 +2,23 @@
 
 ## Unreleased
 
+## 0.0.8
+
+Released on February 13th 2024
+
+### Changed
+
+* Updated parsing to expect more lower case keys in slot data
+
+
+## 0.0.7
+
+Released on September 13th 2023
+
+### Changed
+
+* Updated parsing to expect lower case keys in participant data
+
 
 ## 0.0.6
 

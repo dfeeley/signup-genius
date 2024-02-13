@@ -6,6 +6,8 @@ import requests
 import sys
 import tempfile
 
+from .utils import icase_key_get
+
 INFO_URL = "https://www.signupgenius.com/SUGboxAPI.cfm?go=s.getSignupInfo"
 PARTICIPANT_URL = (
     "https://www.signupgenius.com/SUGboxAPI.cfm?go=s.getSignUpParticipantsBySlotItem"
@@ -108,16 +110,16 @@ def get_signups_from_api(url_id, api_wrapper=None):
     list_id = info["DATA"]["id"]
     for slot_outer_id, slot_dict in info["DATA"]["slots"].items():
         if "dates" in slot_dict:
-            capacity = slot_dict["QTY"]
+            capacity = icase_key_get(slot_dict, "qty")
             for dated_slot_dict in slot_dict["dates"]:
                 slot_inner_id = str(dated_slot_dict["slotitemid"])
                 filled = dated_slot_dict.get("qtyTaken", 0)
 
                 slots[slot_inner_id] = Slot(
                     id=slot_inner_id,
-                    name=slot_dict["ITEM"].strip(),
+                    name=slot_dict["item"].strip(),
                     date=dated_slot_dict.get("lastSlotDate", ""),
-                    comments=slot_dict.get("ITEMCOMMENT", ""),
+                    comments=slot_dict.get("itemcomment", ""),
                     capacity=capacity,
                     filled=filled,
                 )
