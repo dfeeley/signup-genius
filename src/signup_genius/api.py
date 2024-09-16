@@ -12,6 +12,7 @@ INFO_URL = "https://www.signupgenius.com/SUGboxAPI.cfm?go=s.getSignupInfo"
 PARTICIPANT_URL = (
     "https://www.signupgenius.com/SUGboxAPI.cfm?go=s.getSignUpParticipantsBySlotItem"
 )
+API_RESPONSE_MAP = {"Y": "Yes", "N": "No", "M": "Maybe"}
 
 logger = logging.getLogger(__name__)
 
@@ -238,6 +239,12 @@ class AdultChildRSVPSignup:
     comments: str
     adult_count: int
     child_count: int
+
+    def __post_init__(self):
+        for attr in ("adult_count", "child_count"):
+            if getattr(self, attr) == "":
+                setattr(self, attr, 0)
+        self.response = API_RESPONSE_MAP.get(self.response, self.response)
 
 
 def url_id_from_url(url):

@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+## 0.0.10
+
+Released on September 14th 2024
+
+### Changed
+
+* Map RSVP response from Y, N, etc to Yes, No
+* Fix adult_count, child_count to map empty str from api back to 0
+
+## 0.0.9
+
+Released on September 14th 2024
+
+### Changed
+
+* RSVP Sug now returns data via API
+
+
 ## 0.0.8
 
 Released on February 13th 2024
