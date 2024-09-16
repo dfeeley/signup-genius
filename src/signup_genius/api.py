@@ -107,7 +107,32 @@ def get_signups_from_api(url_id, api_wrapper=None):
     api_wrapper = api_wrapper or SignupApiWrapper()
     info = api_wrapper.get_info(url_id)
     slots = {}
+    slots = info["DATA"]["slots"]
+    rsvp = info["DATA"]["rsvp"]
+    if slots:
+        return _get_signups_from_api_with_slots(api_wrapper, info)
+    elif rsvp:
+        return _get_signups_from_api_with_rsvp(api_wrapper, info)
+
+
+def _get_signups_from_api_with_rsvp(api_wrapper, info):
+    signups = []
+    for rsvp in info["DATA"]["rsvp"]:
+        signups.append(
+            AdultChildRSVPSignup(
+                response=rsvp["rsvp"],
+                name=rsvp["displayfirstname"] + " " + rsvp["displaylastname"],
+                comments=rsvp["comment"],
+                adult_count=rsvp["rsvpcount"],
+                child_count=rsvp["rsvpchildcount"],
+            )
+        )
+    return signups
+
+
+def _get_signups_from_api_with_slots(api_wrapper, info):
     list_id = info["DATA"]["id"]
+    slots = {}
     for slot_outer_id, slot_dict in info["DATA"]["slots"].items():
         if "dates" in slot_dict:
             capacity = icase_key_get(slot_dict, "qty")
@@ -204,6 +229,15 @@ class Signup:
     count: int
     comments: str
     slot: Slot
+
+
+@dataclass
+class AdultChildRSVPSignup:
+    response: str
+    name: str
+    comments: str
+    adult_count: int
+    child_count: int
 
 
 def url_id_from_url(url):
