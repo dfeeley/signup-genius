@@ -117,18 +117,8 @@ def get_signups_from_api(url_id, api_wrapper=None):
 
 
 def _get_signups_from_api_with_rsvp(api_wrapper, info):
-    signups = []
-    for rsvp in info["DATA"]["rsvp"]:
-        signups.append(
-            AdultChildRSVPSignup(
-                response=rsvp["rsvp"],
-                name=rsvp["displayfirstname"] + " " + rsvp["displaylastname"],
-                comments=rsvp["comment"],
-                adult_count=rsvp["rsvpcount"],
-                child_count=rsvp["rsvpchildcount"],
-            )
-        )
-    return signups
+    signup_cls = AdultChildRSVPSignup if info.get("childrsvp") else GuestRSVPSignup
+    return [signup_cls.from_api_rsvp(rsvp) for rsvp in info["DATA"]["rsvp"]]
 
 
 def _get_signups_from_api_with_slots(api_wrapper, info):
@@ -233,6 +223,26 @@ class Signup:
 
 
 @dataclass
+class GuestRSVPSignup:
+    response: str
+    name: str
+    comments: str
+    guest_count: int
+
+    def __post_init__(self):
+        self.response = API_RESPONSE_MAP.get(self.response, self.response)
+
+    @classmethod
+    def from_api_rsvp(cls, rsvp):
+        return cls(
+            response=rsvp["rsvp"],
+            name=rsvp["displayfirstname"] + " " + rsvp["displaylastname"],
+            comments=rsvp["comment"],
+            guest_count=rsvp["rsvpcount"],
+        )
+
+
+@dataclass
 class AdultChildRSVPSignup:
     response: str
     name: str
@@ -245,6 +255,16 @@ class AdultChildRSVPSignup:
             if getattr(self, attr) == "":
                 setattr(self, attr, 0)
         self.response = API_RESPONSE_MAP.get(self.response, self.response)
+
+    @classmethod
+    def from_api_rsvp(cls, rsvp):
+        return cls(
+            response=rsvp["rsvp"],
+            name=rsvp["displayfirstname"] + " " + rsvp["displaylastname"],
+            comments=rsvp["comment"],
+            adult_count=rsvp["rsvpcount"],
+            child_count=rsvp["rsvpchildcount"],
+        )
 
 
 def url_id_from_url(url):
