@@ -117,7 +117,9 @@ def get_signups_from_api(url_id, api_wrapper=None):
 
 
 def _get_signups_from_api_with_rsvp(api_wrapper, info):
-    signup_cls = AdultChildRSVPSignup if info.get("childrsvp") else GuestRSVPSignup
+    signup_cls = (
+        AdultChildRSVPSignup if info["DATA"].get("childrsvp") else GuestRSVPSignup
+    )
     return [signup_cls.from_api_rsvp(rsvp) for rsvp in info["DATA"]["rsvp"]]
 
 

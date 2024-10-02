@@ -1,0 +1,713 @@
+{
+  "MESSAGE": [],
+  "DATA": {
+    "noavailableslotsmessage": "This sign up is full and has no more available slots. Please <a href='https://www.signupgenius.com/index.cfm?go=c.help&urld=10C0C4AA8A82CABFDC61-51557891-maud&id=51557891&eid=08C2CEDBFBCAF6650C&cs=09CBBADD8FB88B177B7D64765BC09BCBFDB5'>contact the sign up creator</a> for more info.",
+    "hideslotsbefore": "",
+    "virtualLocations": {},
+    "itemsort": "D",
+    "shownames": true,
+    "productImages": false,
+    "listformat": "rsvp",
+    "slots": {},
+    "accountRequired": false,
+    "childrsvp": false,
+    "ownerispro": false,
+    "MOREPARTICIPANTS": false,
+    "calendarview": false,
+    "fundlyurl": "",
+    "closelock": "",
+    "rsvpdetails": {
+      "starttime": "October, 11 2024 16:30:00",
+      "count": {
+        "maybeRSVPs": 0,
+        "yesRSVPs": 6,
+        "noRSVPs": 6,
+        "noresponse": 62,
+        "yesGuests": 10,
+        "maybeChild": 0,
+        "maybeGuests": 0,
+        "yesChild": 0
+      },
+      "slotid": 692227915,
+      "location": "Briones Regional Park, CA",
+      "invitees": [
+        {
+          "LASTNAME": "Theodoropoulos",
+          "FIRSTNAME": "Ann ",
+          "MEMBERID": 153371,
+          "EMAILPART": "ann.theo"
+        },
+        {
+          "LASTNAME": "DeBoy",
+          "FIRSTNAME": "Lori",
+          "MEMBERID": 184056,
+          "EMAILPART": "lori_deboy"
+        },
+        {
+          "LASTNAME": "Lang",
+          "FIRSTNAME": "Angela",
+          "MEMBERID": 958558,
+          "EMAILPART": "angelawashere"
+        },
+        {
+          "LASTNAME": "De La Cruz",
+          "FIRSTNAME": "Susan",
+          "MEMBERID": 967617,
+          "EMAILPART": "susanwdelacruz"
+        },
+        {
+          "LASTNAME": "Jorgensen",
+          "FIRSTNAME": "Ronit",
+          "MEMBERID": 1008936,
+          "EMAILPART": "ronitj77"
+        },
+        {
+          "LASTNAME": "Wong",
+          "FIRSTNAME": "Margaret",
+          "MEMBERID": 1109767,
+          "EMAILPART": "mwong"
+        },
+        {
+          "LASTNAME": "Dinwiddie",
+          "FIRSTNAME": "Kim",
+          "MEMBERID": 2420495,
+          "EMAILPART": "kds444"
+        },
+        {
+          "LASTNAME": "Bishop",
+          "FIRSTNAME": "Colin",
+          "MEMBERID": 3809864,
+          "EMAILPART": "bishopcolin"
+        },
+        {
+          "LASTNAME": "Siu",
+          "FIRSTNAME": "Maia",
+          "MEMBERID": 3841514,
+          "EMAILPART": "Maiasiu"
+        },
+        {
+          "LASTNAME": "Pak",
+          "FIRSTNAME": "Caitlin",
+          "MEMBERID": 5275345,
+          "EMAILPART": "caitlinfamily"
+        },
+        {
+          "LASTNAME": "Cowen",
+          "FIRSTNAME": "David",
+          "MEMBERID": 5807512,
+          "EMAILPART": "dbcowen"
+        },
+        {
+          "LASTNAME": "Cowen",
+          "FIRSTNAME": "Kaye",
+          "MEMBERID": 5807576,
+          "EMAILPART": "kaye.cowen"
+        },
+        {
+          "LASTNAME": "Barrios",
+          "FIRSTNAME": "Katie",
+          "MEMBERID": 7118245,
+          "EMAILPART": "kbarrios10"
+        },
+        {
+          "LASTNAME": "De La Cruz",
+          "FIRSTNAME": "Gregg",
+          "MEMBERID": 8489737,
+          "EMAILPART": "greggdelacruz"
+        },
+        {
+          "LASTNAME": "barrios",
+          "FIRSTNAME": "stephen",
+          "MEMBERID": 9098330,
+          "EMAILPART": "sbarrios10"
+        },
+        {
+          "LASTNAME": "Chung",
+          "FIRSTNAME": "Eric",
+          "MEMBERID": 10665880,
+          "EMAILPART": "nyechung"
+        },
+        {
+          "LASTNAME": "Miller",
+          "FIRSTNAME": "Chris",
+          "MEMBERID": 10695637,
+          "EMAILPART": "mtbmiller"
+        },
+        {
+          "LASTNAME": "Van Houten",
+          "FIRSTNAME": "Marcie",
+          "MEMBERID": 11245572,
+          "EMAILPART": "marcievanhouten"
+        },
+        {
+          "LASTNAME": "Siu",
+          "FIRSTNAME": "Raymond/Maia",
+          "MEMBERID": 15463436,
+          "EMAILPART": "rkcsiu"
+        },
+        {
+          "LASTNAME": "Lew",
+          "FIRSTNAME": "Bill",
+          "MEMBERID": 19913825,
+          "EMAILPART": "wm_lew"
+        },
+        {
+          "LASTNAME": "Gardiner",
+          "FIRSTNAME": "Kevin",
+          "MEMBERID": 20020749,
+          "EMAILPART": "kgardiner1"
+        },
+        {
+          "LASTNAME": "Gardiner",
+          "FIRSTNAME": "Natalie",
+          "MEMBERID": 20020785,
+          "EMAILPART": "natalie.r.gardiner"
+        },
+        {
+          "LASTNAME": "Miranda",
+          "FIRSTNAME": "Alfonso",
+          "MEMBERID": 20115763,
+          "EMAILPART": "alfonsomiranda"
+        },
+        {
+          "LASTNAME": "Bishop",
+          "FIRSTNAME": "Selenne",
+          "MEMBERID": 20376913,
+          "EMAILPART": "selenne"
+        },
+        {
+          "LASTNAME": "Liebermann",
+          "FIRSTNAME": "Tobias",
+          "MEMBERID": 20810437,
+          "EMAILPART": "tobias930"
+        },
+        {
+          "LASTNAME": "Lichman",
+          "FIRSTNAME": "Jordan",
+          "MEMBERID": 20855285,
+          "EMAILPART": "jplichman"
+        },
+        {
+          "LASTNAME": "Balaguru ",
+          "FIRSTNAME": "Soundhari ",
+          "MEMBERID": 21296844,
+          "EMAILPART": "shuguru"
+        },
+        {
+          "LASTNAME": "Shu",
+          "FIRSTNAME": "Han",
+          "MEMBERID": 21483154,
+          "EMAILPART": "hanshu"
+        },
+        {
+          "LASTNAME": "Deepak",
+          "FIRSTNAME": "Suprabha",
+          "MEMBERID": 27540980,
+          "EMAILPART": "supdeepak"
+        },
+        {
+          "LASTNAME": "Dinwiddie",
+          "FIRSTNAME": "Starrett",
+          "MEMBERID": 29392656,
+          "EMAILPART": "wm.s.dinwiddie"
+        },
+        {
+          "LASTNAME": "kaplanes",
+          "FIRSTNAME": "stefania",
+          "MEMBERID": 30320151,
+          "EMAILPART": "fourkjs"
+        },
+        {
+          "LASTNAME": "Thompson",
+          "FIRSTNAME": "Michael",
+          "MEMBERID": 30563388,
+          "EMAILPART": "mthompson"
+        },
+        {
+          "LASTNAME": "Jorgensen",
+          "FIRSTNAME": "Scott",
+          "MEMBERID": 37617913,
+          "EMAILPART": "scottjorgensen"
+        },
+        {
+          "LASTNAME": "Liebermann",
+          "FIRSTNAME": "Jennifer",
+          "MEMBERID": 39712097,
+          "EMAILPART": "jennifer.liebermann"
+        },
+        {
+          "LASTNAME": "Feeley",
+          "FIRSTNAME": "Deborah",
+          "MEMBERID": 39823121,
+          "EMAILPART": "deborahfeeley"
+        },
+        {
+          "LASTNAME": "Chen",
+          "FIRSTNAME": "Alice",
+          "MEMBERID": 42136546,
+          "EMAILPART": "alicemchen"
+        },
+        {
+          "LASTNAME": "Margiotti",
+          "FIRSTNAME": "Carolyn",
+          "MEMBERID": 42404336,
+          "EMAILPART": "carolynmargiotti"
+        },
+        {
+          "LASTNAME": "Johnson",
+          "FIRSTNAME": "Scott",
+          "MEMBERID": 42404337,
+          "EMAILPART": "sj4158506670"
+        },
+        {
+          "LASTNAME": "",
+          "FIRSTNAME": "",
+          "MEMBERID": 42741982,
+          "EMAILPART": "gitwashere"
+        },
+        {
+          "LASTNAME": "Feeley",
+          "FIRSTNAME": "David",
+          "MEMBERID": 49892345,
+          "EMAILPART": "davidpfeeley"
+        },
+        {
+          "LASTNAME": "Siu",
+          "FIRSTNAME": "Raymond",
+          "MEMBERID": 52602025,
+          "EMAILPART": "rkcsiu"
+        },
+        {
+          "LASTNAME": "Romero",
+          "FIRSTNAME": "Carolina",
+          "MEMBERID": 58772389,
+          "EMAILPART": "yayna"
+        },
+        {
+          "LASTNAME": "Jarratt",
+          "FIRSTNAME": "Julie",
+          "MEMBERID": 59373499,
+          "EMAILPART": "juliejarratt"
+        },
+        {
+          "LASTNAME": "Jarratt",
+          "FIRSTNAME": "Paul",
+          "MEMBERID": 62539312,
+          "EMAILPART": "pej289"
+        },
+        {
+          "LASTNAME": "Hurtado",
+          "FIRSTNAME": "Jerlin",
+          "MEMBERID": 63380045,
+          "EMAILPART": "jerlinh"
+        },
+        {
+          "LASTNAME": "Moss",
+          "FIRSTNAME": "Lindsay",
+          "MEMBERID": 67261955,
+          "EMAILPART": "lindsaysmoss"
+        },
+        {
+          "LASTNAME": "Deragopian",
+          "FIRSTNAME": "Lenna",
+          "MEMBERID": 68951599,
+          "EMAILPART": "lennadera"
+        },
+        {
+          "LASTNAME": "Ehrhorn",
+          "FIRSTNAME": "David",
+          "MEMBERID": 71204760,
+          "EMAILPART": "davidehrhorn"
+        },
+        {
+          "LASTNAME": "De La Cruz",
+          "FIRSTNAME": "Cody",
+          "MEMBERID": 80971880,
+          "EMAILPART": "thedlcfam"
+        },
+        {
+          "LASTNAME": "Thompson",
+          "FIRSTNAME": "Holly",
+          "MEMBERID": 85648489,
+          "EMAILPART": "hdeily"
+        },
+        {
+          "LASTNAME": "John",
+          "FIRSTNAME": "Jimmy",
+          "MEMBERID": 86526722,
+          "EMAILPART": "jimmyislive"
+        },
+        {
+          "LASTNAME": "Menon",
+          "FIRSTNAME": "Sindu",
+          "MEMBERID": 88310465,
+          "EMAILPART": "sinumenon"
+        },
+        {
+          "LASTNAME": "Liebermann",
+          "FIRSTNAME": "Tobias",
+          "MEMBERID": 89314919,
+          "EMAILPART": "trek_2100"
+        },
+        {
+          "LASTNAME": "Siu",
+          "FIRSTNAME": "Maia",
+          "MEMBERID": 94064039,
+          "EMAILPART": "maiasiu"
+        },
+        {
+          "LASTNAME": "Thompson",
+          "FIRSTNAME": "Jon",
+          "MEMBERID": 95025746,
+          "EMAILPART": "jonathan.tonnes"
+        },
+        {
+          "LASTNAME": "Schellenberg",
+          "FIRSTNAME": "Josh",
+          "MEMBERID": 95526577,
+          "EMAILPART": "joshschel"
+        },
+        {
+          "LASTNAME": "Ehrhorn",
+          "FIRSTNAME": "Abbie",
+          "MEMBERID": 95630635,
+          "EMAILPART": "aehrhorn"
+        },
+        {
+          "LASTNAME": "Ehrhorn",
+          "FIRSTNAME": "Abigail",
+          "MEMBERID": 95839571,
+          "EMAILPART": "aehrhorn"
+        },
+        {
+          "LASTNAME": "Moss",
+          "FIRSTNAME": "Jacob",
+          "MEMBERID": 102969094,
+          "EMAILPART": "jacobamoss"
+        },
+        {
+          "LASTNAME": "Lichman",
+          "FIRSTNAME": "Jordan",
+          "MEMBERID": 118966599,
+          "EMAILPART": "jordan.lichman"
+        },
+        {
+          "LASTNAME": "Jones",
+          "FIRSTNAME": "Ronell",
+          "MEMBERID": 131011667,
+          "EMAILPART": "ronichi1970"
+        },
+        {
+          "LASTNAME": "Uttawar",
+          "FIRSTNAME": "Ashish",
+          "MEMBERID": 133854842,
+          "EMAILPART": "ashish.uttarwar"
+        },
+        {
+          "LASTNAME": "Lakshmanan",
+          "FIRSTNAME": "Deepak",
+          "MEMBERID": 137000699,
+          "EMAILPART": "deepak.lakshmanan"
+        },
+        {
+          "LASTNAME": "Uttarwar",
+          "FIRSTNAME": "Kirti",
+          "MEMBERID": 138340700,
+          "EMAILPART": "kbanginwar"
+        },
+        {
+          "LASTNAME": "",
+          "FIRSTNAME": "",
+          "MEMBERID": 138340701,
+          "EMAILPART": "troop284scoutmaster"
+        },
+        {
+          "LASTNAME": "Liebermann",
+          "FIRSTNAME": "Tobi",
+          "MEMBERID": 139106383,
+          "EMAILPART": "trek.2100"
+        },
+        {
+          "LASTNAME": "Miller",
+          "FIRSTNAME": "Alex",
+          "MEMBERID": 145923766,
+          "EMAILPART": "alexcitomiller"
+        },
+        {
+          "LASTNAME": "Chung",
+          "FIRSTNAME": "Caitlin",
+          "MEMBERID": 146745329,
+          "EMAILPART": "caitlinfamily1"
+        },
+        {
+          "LASTNAME": "Baron",
+          "FIRSTNAME": "Ananda",
+          "MEMBERID": 154451981,
+          "EMAILPART": "ananda.schweifler"
+        },
+        {
+          "LASTNAME": "Schweifler",
+          "FIRSTNAME": "Aaron",
+          "MEMBERID": 154451982,
+          "EMAILPART": "aschweifler"
+        },
+        {
+          "LASTNAME": "",
+          "FIRSTNAME": "",
+          "MEMBERID": 163583903,
+          "EMAILPART": "schweif"
+        },
+        {
+          "LASTNAME": "Carmody",
+          "FIRSTNAME": "Chris",
+          "MEMBERID": 171591320,
+          "EMAILPART": "cecarmody"
+        }
+      ],
+      "usetime": 1,
+      "endtime": ""
+    },
+    "qtyLimit_SlotItems": "",
+    "owner": 117477901,
+    "showAds": true,
+    "participants": {},
+    "hascustomfields": false,
+    "alldateshidden": false,
+    "hideDaysBefore": "",
+    "notifyme": 1,
+    "urlid": "10C0C4AA8A82CABFDC61-51557891-maud",
+    "hasavailableslots": false,
+    "communityid": 13490982,
+    "aftermessage": "",
+    "qtyLimit_SignUp": "",
+    "hiddendatesmessage": "",
+    "ispremium": false,
+    "tzshort": "PDT",
+    "themeclass": ".bgcontainer {\n\t\t\t\t\t\t\t\tbackground: url('');\n\t\t\t\t\t\t\t\tbackground-color: #5A6075;\n\t\t\t\t\t\t\t\t/* background-size: cover; */\n\t\t\t\t\t\t\t\tposition: fixed;\n\t\t\t\t\t\t\t\twidth: 100vw;\n\t\t\t\t\t\t\t\theight: 100vh;\n\t\t\t\t\t\t\t\tpadding: 0;\n\t\t\t\t\t\t\t\tmargin: 0;\n\t\t\t\t\t\t\t\ttop: 0;\n\t\t\t\t\t\t\t\tz-index: -1;\n\t\t\t\t\t\t\t\t/* filter: blur(4px); */\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpFormDefaults {\n\t\t\t\t\t\t\t\tcolor: #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm h1 {\n\t\t\t\t\t\t\t\tcolor: #ACC034;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm h2 {\n\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm a, .signUpForm .hyperlink, .signUpForm p {\n\t\t\t\t\t\t\t\tcolor: #ACC034;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .hyperlink:focus, .signUpForm .hyperlink:hover, .signUpForm a:focus, .signUpForm a:hover {\n\t\t\t\t\t\t\t color: #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm thead {\n\t\t\t\t\t\t\t\tbackground-image: url('') !important;\n\t\t\t\t\t\t\t\tbackground-color: #F68B1C;\n\t\t\t\t\t\t\t\tcolor: #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm tbody {\n\t\t\t\t\t\t\t\tbackground-color: #5A6075;\n\t\t\t\t\t\t\t\tborder-top: 1px solid #FFFFFF !important;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm tbody > tr:nth-child(2) > td {\n\t\t\t\t\t\t\t\tpadding-top: 0;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm th {\n\t\t\t\t\t\t\t\tborder-bottom: 2px solid #FFFFFF !important;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm td {\n\t\t\t\t\t\t\t\tborder: none !important;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm tfoot {\n\t\t\t\t\t\t\t\tbackground-image: url('') !important;\n\t\t\t\t\t\t\t\tbackground-color: #F68B1C;\n\t\t\t\t\t\t\t\tcolor: #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm table {\n\t\t\t\t\t\t\t\tborder-top: 3px solid #FFFFFF;\n\t\t\t\t\t\t\t\tborder-right: 1px solid #FFFFFF;\n\t\t\t\t\t\t\t\tborder-bottom: 1px solid #FFFFFF;\n\t\t\t\t\t\t\t\tborder-left: 1px solid #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .table > tbody > tr > td {\n\t\t\t\t\t\t\t\tvertical-align: middle;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .padded-options.indicator:before {\n\t\t\t\t\t\t\t\tborder-left: 2px solid #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .padded-options.indicator:after {\n\t\t\t\t\t\t\t\tcolor: #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .btn-default {\n\t\t\t\t\t\t\t\tborder: 1px solid #ACC034;\n\t\t\t\t\t\t\t\tcolor: #FFFFFF;\n\t\t\t\t\t\t\t\tbackground: transparent;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .btn-success {\n\t\t\t\t\t\t\t\tbackground-image: url('') !important;\n\t\t\t\t\t\t\t\tbackground-color: #F68B1C;\n\t\t\t\t\t\t\t\tcolor: #FFFFFF;\n\t\t\t\t\t\t\t\tborder: 1px solid #FFFFFF;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .form-control-danger {\n\t\t\t\t\t\t\t\tborder-color: #ACC034;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .feedback-tooltip {\n\t\t\t\t\t\t\t\tbackground-color: #ACC034 !important;\n\t\t\t\t\t\t\t\tcolor: #5A6075 !important;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .feedback-tooltip:before {\n\t\t\t\t\t\t border-right-color: #ACC034;\n\t\t\t\t\t\t }\n\t\t\t\t\t\t\t.table .feedback-tooltip:before {\n\t\t\t\t\t\t\t\tborder-right-color:transparent;\n\t\t\t\t\t\t border-bottom-color: #ACC034;\n\t\t\t\t\t\t }\n\t\t\t\t\t\t\t.signUpForm .form-group.has-error::before, .signUpForm .control-group.has-error::before {\n\t\t\t\t\t\t border-left: 6px solid #ACC034;\n\t\t\t\t\t\t }\n\t\t\t\t\t\t\t.signUpForm .feedback-error{\n\t\t\t\t\t\t\t\tbackground-color: #ACC034;\n\t\t\t\t\t\t\t\tcolor: #5A6075;\n\t\t\t\t\t\t\t\twidth: 60%;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.signUpForm .has-error .form-control,\n\t\t\t\t\t \t.signUpForm .has-error .form-control-feedback {\n\t\t\t\t\t \tcolor: #000000;\n\t\t\t\t\t \tborder-color: #ACC034;\n\t\t\t\t\t \t}\n\t\t\t\t\t\t\t.signUpForm .has-error label.control-label {\n\t\t\t\t\t\t\t\tcolor: #ACC034;\n\t\t\t\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.sm-color {\n\t\t\t\t\t\t\t\tfill: #ACC034;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.sm-icon-size {\n\t\t\t\t\t\t\t\twidth: 48px;\n\t\t\t\t\t\t\t\theight: 48px;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.sub-footer.nobrand { background: url(''); background-color: #5A6075; }\n\t\t\t\t\t\t\t.sub-footer.nobrand .signUpForm > .hyperlink, .sub-footer.nobrand .signUpForm > .verysmalllink { text-decoration: underline; color:#ACC034; }",
+    "fullurl": "https://www.signupgenius.com/go/10C0C4AA8A82CABFDC61-51557891-maud",
+    "closedateutc": "",
+    "memberImageID": 6978840,
+    "shortdformat": "mm/dd/yyyy",
+    "signupimage": "https://s3.amazonaws.com/images.signupgenius.com/memberImages/30BE4E405248FE4F46067E5FD131DC80_117477901.jpg",
+    "shortUrl": "",
+    "ALLOWEMBED": false,
+    "themeid": 28065,
+    "slotMetadata": {
+      "view": "list",
+      "totalSlots": 1,
+      "hasHiddenSlots": "false",
+      "calendarView": {
+        "lastMonthWithSlots": "October, 11 2024 16:30:00",
+        "firstMonthWithSlots": "October, 11 2024 16:30:00"
+      }
+    },
+    "commenttitle": "My Comment",
+    "socialshare": true,
+    "ispp": false,
+    "iswp": false,
+    "hideDaysAfter": "",
+    "signuplocked": false,
+    "itemimages": {},
+    "linktowebsite": "",
+    "starterTemplate": {
+      "ACTIVE": false
+    },
+    "commentRequired": false,
+    "useRSVP": true,
+    "listCategoryID": 14,
+    "tabs": {
+      "tabgroupid": 0,
+      "istabbed": false
+    },
+    "islp": false,
+    "slotTitle": "Available Slot",
+    "EMBEDMESSAGE": "",
+    "listType": "Scheduling",
+    "beforemessage": "",
+    "id": 51557891,
+    "modifylockdays": "",
+    "nodate": false,
+    "currency": "USD",
+    "nogroupadd": true,
+    "locations": {},
+    "hideslotsafter": "",
+    "rsvp": [
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Lang",
+        "rsvpcount": 2,
+        "slotid": 692227915,
+        "rsvp": "Y",
+        "displayfirstname": "Tristan",
+        "id": 34756615,
+        "comment": "",
+        "memberid": 958558,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": "",
+        "displaylastname": "Van Houten",
+        "rsvpcount": 2,
+        "slotid": 692227915,
+        "rsvp": "Y",
+        "displayfirstname": "Marcie",
+        "id": 34845070,
+        "comment": "Leo can join Friday through Saturday afternoon. Marcie may also join.",
+        "memberid": 11245572,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Deepak",
+        "rsvpcount": 0,
+        "slotid": 692227915,
+        "rsvp": "N",
+        "displayfirstname": "Suprabha",
+        "id": 34757165,
+        "comment": "Ary will miss this campout",
+        "memberid": 27540980,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Feeley",
+        "rsvpcount": 3,
+        "slotid": 692227915,
+        "rsvp": "Y",
+        "displayfirstname": "David",
+        "id": 34756967,
+        "comment": "Donncha, Cian & Dave",
+        "memberid": 49892345,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Hurtado",
+        "rsvpcount": 1,
+        "slotid": 692227915,
+        "rsvp": "Y",
+        "displayfirstname": "Jerlin",
+        "id": 34880021,
+        "comment": "Joshua",
+        "memberid": 63380045,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Moss",
+        "rsvpcount": 0,
+        "slotid": 692227915,
+        "rsvp": "N",
+        "displayfirstname": "Lindsay",
+        "id": 34832145,
+        "comment": "Aaron can\u2019t make it this time!",
+        "memberid": 67261955,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Deragopian",
+        "rsvpcount": 1,
+        "slotid": 692227915,
+        "rsvp": "Y",
+        "displayfirstname": "Garo",
+        "id": 34870400,
+        "comment": "",
+        "memberid": 68951599,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "John",
+        "rsvpcount": 0,
+        "slotid": 692227915,
+        "rsvp": "N",
+        "displayfirstname": "Jimmy",
+        "id": 34870412,
+        "comment": "",
+        "memberid": 86526722,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Thompson",
+        "rsvpcount": 1,
+        "slotid": 692227915,
+        "rsvp": "Y",
+        "displayfirstname": "Jonas",
+        "id": 34906449,
+        "comment": "",
+        "memberid": 95025746,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": "",
+        "displaylastname": "Cowen",
+        "rsvpcount": "",
+        "slotid": 692227915,
+        "rsvp": "N",
+        "displayfirstname": "David",
+        "id": 34756592,
+        "comment": "",
+        "memberid": 117477901,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Uttarwar",
+        "rsvpcount": 0,
+        "slotid": 692227915,
+        "rsvp": "N",
+        "displayfirstname": "Ashish",
+        "id": 34756953,
+        "comment": "",
+        "memberid": 133854842,
+        "nonmembername": ""
+      },
+      {
+        "rsvpchildcount": 0,
+        "displaylastname": "Chung",
+        "rsvpcount": 0,
+        "slotid": 692227915,
+        "rsvp": "N",
+        "displayfirstname": "Taejin",
+        "id": 34759946,
+        "comment": "",
+        "memberid": 146745329,
+        "nonmembername": ""
+      }
+    ],
+    "signupprotection": "",
+    "hashidenames": false,
+    "emailrequired": true,
+    "livedateutc": "",
+    "participantcount": 0,
+    "showSegments": true,
+    "rsvppayments": false,
+    "iscomplete": true,
+    "allowswap": false,
+    "grouponly": false,
+    "removebranding": false,
+    "expired": false,
+    "embedurlid": "10C0C4AA8A82CABFDC61-51557891-maud",
+    "notificationids": "",
+    "showProfilePics": true,
+    "header": {
+      "contactname": "Troop 284",
+      "date": {
+        "date": "10/11/2024 (Fri.)",
+        "time": "4:30PM",
+        "usetime": 1
+      },
+      "ownerppicdata": "{\"resource\":{\"medium\":\"\",\"text\":\"T2\",\"small\":\"\",\"xlarge\":\"\",\"large\":\"\"},\"id\":1,\"type\":\"initials\",\"value\":\"T2\"}",
+      "contacturl": "https://www.signupgenius.com/index.cfm?go=c.help&urld=10C0C4AA8A82CABFDC61-51557891-maud&id=51557891&eid=08C2CEDBFBCAF6650C&cs=09CBBADD8FB88B177B7D64765BC09BCBFDB5",
+      "title": "Maud Whalen Campout - Oct 11-13",
+      "description": "<p style=\"text-align:inherit\">Maud Whalen Campout</p>\n\n<p style=\"text-align:inherit\">What better way to take advantage of a 2-day weekend in early fall than a two-night backpacking\u00a0trip to Maud Whalen campsite in Briones regional Park. We have a large group site.\u00a0We will backpack our way to the campsite and out again.</p>\n\n<p style=\"text-align:inherit\">Activities include Backpacking, scout craft, comradery and team-building.\u00a0 There will be\u00a0running water at these site.</p>\n\n<p style=\"text-align:inherit\">Additional Details:</p>\n\n<p style=\"text-align:inherit\">We will meet up at the Bear Creek Staging Area from where the troop will backpack to the Maud Whalen Campsite</p>\n\n<p style=\"text-align:inherit\">Depart Lafayette: Fri\u00a0~4:30\u00a0pm\u00a0-- Meet at the Bear Creek Staging Area Briones Regional Park</p>\n\n<p style=\"text-align:inherit\">Return Lafayette: Sun\u00a0~10\u00a0am\u00a0</p>\n\n<p>Directions -\u00a0<a href=\"https://www.ebparks.org/sites/default/files/briones_map.pdf\" rel=\"nofollow\">www.ebparks.org/sites/default/files/briones_map.pdf</a></p>\n\n<p>Scout Activity Consent Form -\u00a0<a href=\"http://drive.google.com/drive/folders/1xzhTYco5ZrX-w42ltaq0jyxNyFjODcsF\" rel=\"nofollow\">drive.google.com/drive/folders/1xzhTYco5ZrX-w42ltaq0jyxNyFjODcsF</a></p>\n\n<p>Camping Packing List -\u00a0<a href=\"https://drive.google.com/file/d/1vVEaB-nL2DxDMBY69gl4ReYO4g3JaMFL/view\" rel=\"nofollow\">Troop 284 Backpack Packing List.pdf - Google Drive</a></p>\n\n<p>Carpool Signup Sheet -<a href=\"https://docs.google.com/spreadsheets/d/1SySYWz8YBnJ1CerXzOPMN66ks9gz20GRyPBMi4306oU/edit?gid&#61;2072284300#gid&#61;2072284300\" rel=\"nofollow\">T284 Carpooling - Maud Whalen Campout - Google Sheets</a><br />\nPLEASE RSVP NLT Sep 27nd \u00a0</p>\n\n<p style=\"text-align:inherit\">Please reach out me to or Troop 284\u00a0leadership with\u00a0any questions.\u00a0<br />\n-Richard\u00a0gitwashere&#64;gmail.com</p>\n",
+      "group": "Troop 284 Families"
+    },
+    "showRSVP": true,
+    "displayVideoAdOnSignUpSheet": true
+  },
+  "SUCCESS": true,
+  "CODE": ""
+}

@@ -6,12 +6,13 @@ from signup_genius.api import get_signups_from_api, CachingSignupApiWrapper
 @pytest.fixture
 def caching_api_wrapper(api_cache_path):
     return CachingSignupApiWrapper(
-        cache_dir=api_cache_path, refresh=False, never_refresh=True
+        cache_dir=api_cache_path, refresh=False, never_refresh=False
     )
 
 
-def test_warriors_api(caching_api_wrapper):
-    url_id = "5080C48A4AC2FA13-warrriors"
+def test_maud_whalen_api(caching_api_wrapper):
+    url_id = "10C0C4AA8A82CABFDC61-51557891-maud"
+    breakpoint()
     signups = get_signups_from_api(url_id, api_wrapper=caching_api_wrapper)
     assert len(signups) > 0
     assert caching_api_wrapper.request_count == 0
